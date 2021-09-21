@@ -1,18 +1,21 @@
 {
-  "name": "bpmn-js-example-react-properties-panel",
+  "name": "bpmn-js-jini2",
   "version": "0.0.0",
   "description": "A custom react properties panel example",
+  "homepage": "https://jini2.github.io/bpmn-js-jini2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --watch"
+    "start": "webpack-dev-server --open --watch",
+    "predeploy": "npm start",
+    "deploy": "gh-pages -d build"
   },
   "author": {
-    "name": "Niklas Kiefer",
-    "url": "https://github.com/pinussilvestrus"
+    "name": "Jini2",
+    "url": "https://github.com/Jini2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bpmn-io/bpmn-js-example-react-properties-panel"
+    "url": "https://github.com/Jini2/bpmn-js-jini2"
   },
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +25,7 @@
     "copy-webpack-plugin": "^5.0.0",
     "css-loader": "^2.1.0",
     "file-loader": "^3.0.1",
+    "gh-pages": "^3.2.3",
     "raw-loader": "^1.0.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.5",
