@@ -2,7 +2,7 @@
   "name": "bpmn-js-jini2",
   "version": "0.0.0",
   "description": "A custom react properties panel example",
-  "homepage": "https://jini2.github.io/bpmn-js-jini2",
+  "homepage": "https://jini2.github.io/bpmn-js-jini2/",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open --mode development --content-base ./public",
