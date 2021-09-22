@@ -5,7 +5,7 @@
   "homepage": "https://jini2.github.io/bpmn-js-jini2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open --watch",
+    "start": "webpack-dev-server --devtool eval-source-map --history-api-fallback",
     "predeploy": "npm start",
     "deploy": "gh-pages -d public"
   },
