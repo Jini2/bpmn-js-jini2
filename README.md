@@ -1,5 +1,10 @@
 # bpmn-js-jini2
 
+## Demo
+
+Live demo on Github Pages: [https://jini2.github.io/bpmn-js-jini2](https://jini2.github.io/bpmn-js-jini2)
+
+
 ## Run the Example
 
 ```sh
