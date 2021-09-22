@@ -5,7 +5,8 @@
   "homepage": "https://jini2.github.io/bpmn-js-jini2",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack"
+    "start": "webpack",
+    "gh-deploy": "git subtree push --prefix public origin gh-pages"
   },
   "author": {
     "name": "Jini2",
