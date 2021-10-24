@@ -1,0 +1,52 @@
+#tree-container {
+    border-right: 1px solid #CCC;
+    padding-right: 5px;
+    background-color: #FAFAFA;
+}
+
+#tree-btn {
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 0px;
+}
+
+#tree-body ul {
+    list-style:none;
+    padding-left: 5px;
+}
+
+#tree-body li {
+    padding: 5px 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: floralwhite;
+}
+
+#tree-body li.active {
+    background-color: lightskyblue;
+}
+
+#tree-body li i {
+    margin-right: 3px;
+}
+
+.new-item-body {
+    display: grid;
+    margin: 0px 5px;
+    font-size: 0.8rem;
+}
+
+.new-item-body input {
+    padding: 0.175rem 0.55rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    margin-bottom: 0.2rem;
+}
+
+.showTreeBtn {
+    position: absolute;
+    left: 10px;
+}

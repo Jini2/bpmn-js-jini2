@@ -6,8 +6,17 @@ import customModdleExtension from './moddle/custom.json';
 
 import diagramXML from './diagram.bpmn';
 
+import TreePanel from './tree-panel';
+
+import ModelerHead from './modeler-head';
+
+import { createStore } from 'redux';
+import rootReducer from './reducers';
+
 const $modelerContainer = document.querySelector('#modeler-container');
 const $propertiesContainer = document.querySelector('#properties-container');
+const $treeContainer = document.querySelector('#tree-container');
+const $headContainer = document.querySelector('#head-container');
 
 const modeler = new Modeler({
   container: $modelerContainer,
@@ -25,3 +34,18 @@ const propertiesPanel = new PropertiesPanel({
 });
 
 modeler.importXML(diagramXML);
+
+const store = createStore(rootReducer);
+
+//add components
+const treePanel = new TreePanel({
+  container: $treeContainer,
+  modeler,
+  store
+});
+
+const modelerHead = ModelerHead({
+  container: $headContainer,
+  modeler,
+  store
+});
