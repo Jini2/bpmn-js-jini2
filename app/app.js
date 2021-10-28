@@ -6,6 +6,9 @@ import customModdleExtension from './moddle/custom.json';
 
 import diagramXML from './diagram.bpmn';
 
+import minimapModule from 'diagram-js-minimap';
+import originModule from 'diagram-js-origin';
+
 import TreePanel from './tree-panel';
 
 import ModelerHead from './modeler-head';
@@ -20,6 +23,10 @@ const $headContainer = document.querySelector('#head-container');
 
 const modeler = new Modeler({
   container: $modelerContainer,
+  additionalModules: [
+    minimapModule,
+    originModule
+  ],
   moddleExtensions: {
     custom: customModdleExtension
   },
